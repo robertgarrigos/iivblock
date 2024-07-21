@@ -39,8 +39,8 @@ class BlockIIV extends Block {
       'img_url' => '',
       'wrapper_classes' => 'iivblock-inner ' . $this->settings['machine_name'],
       'image_position' => '',
-      'image_transition' => $this->settings['image_transition'],
-      'content_transition' => $this->settings['content_transition'],
+      'image_transition' => isset($this->settings['image_transition']) ? $this->settings['image_transition'] : 'normal',
+      'content_transition' => isset($this->settings['content_transition']) ? $this->settings['content_transition'] : 'normal',
       'machine_name' => $this->settings['machine_name'],
     );
 
@@ -148,7 +148,7 @@ class BlockIIV extends Block {
     $form['label'] = array(
       '#type' => 'textfield',
       '#title' => t('Admin label'),
-      '#default_value' => $this->settings['label'],
+      '#default_value' => isset($this->settings['label']) ? $this->settings['label'] : 'IIV Block',
       '#maxlength' => 64,
       '#description' => t('This text is used only in administrative interfaces. It will not be shown to site visitors.'),
       '#required' => TRUE,
