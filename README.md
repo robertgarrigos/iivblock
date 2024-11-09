@@ -2,7 +2,7 @@
 
 This module provides a block type to add a simple text snippet with an image to any region in your layouts.
 IIV Blocks are reusable.
-Images can be on the left or the right, an image style applied,
+Images can be on the left or the right or up or down, an image style applied,
 they can have a link or title...
 And do not forget to try animations...
 
@@ -20,7 +20,7 @@ Install this module using the official Backdrop CMS instructions at https://back
 2. Click to add a block and search for "IIV Block".
 3. Add a file and configure the settings to meet your needs.
 4. WARNING : JUST CONFIGURE IMAGE AND TEXT PARAMETERS AND THEN ADD BLOCK BEFORE COMMING BACK TO MODIFICATION FOR VISIBILITY AND OTHER THINGS
-5. To reuse an existing IIV Block on another layout, search for the block. 
+5. To reuse an existing IIV Block on another layout, search for the block.
   This will create a separate instance of the block.
 
 ## Dependencies
