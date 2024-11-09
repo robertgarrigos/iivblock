@@ -37,7 +37,7 @@
 <?php else: ?>
   <div class="row <?php print $wrapper_classes; ?>">
     <div class="col">
-      <?php if ($image_position == 'up'): ?>
+      <?php if ($image_position == 'above'): ?>
         <div class="row">
           <div class="col d-flex justify-content-center iivblock-image first <?php print $image_transition; ?>">
             <?php print $image ?>
