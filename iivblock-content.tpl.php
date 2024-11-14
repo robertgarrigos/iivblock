@@ -36,31 +36,21 @@
   </div>
 <?php else: ?>
   <div class="row <?php print $wrapper_classes; ?>">
-    <div class="col">
       <?php if ($image_position == 'above'): ?>
-        <div class="row">
-          <div class="col d-flex justify-content-center iivblock-image first <?php print $image_transition; ?>">
-            <?php print $image ?>
-          </div>
+        <div class="col-sm-12 iivblock-image first <?php print $image_transition; ?>">
+          <?php print $image ?>
         </div>
-        <div class="row">
-          <div class="col d-flex justify-content-center iivblock-body second  <?php print $content_transition; ?>">
-            <?php print $content ?>
-          </div>
+        <div class="col-sm-12 iivblock-body second <?php print $content_transition; ?>">
+          <?php print $content ?>
         </div>
       <?php else: ?>
-        <div class="row">
-          <div class="col d-flex justify-content-center iivblock-body first <?php print $content_transition; ?>">
+        <div class="col-sm-12 iivblock-body first <?php print $content_transition; ?>">
             <?php print $content ?>
-          </div>
         </div>
-        <div class="row">
-          <div class="col d-flex justify-content-center iivblock-image second <?php print $image_transition; ?>">
+        <div class="col-sm-12 iivblock-image second <?php print $image_transition; ?>">
             <?php print $image ?>
-          </div>
         </div>
       <?php endif; ?>
-    </div>
     <script>
       iivblock_observer.observe(document.querySelector(".iivblock-inner.<?php print $machine_name; ?>"));
     </script>
